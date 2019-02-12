@@ -409,21 +409,103 @@
 
 ### lecture 5 - goal orientation in RE
   - **vocabulary (be able to define and categorize statements)**
-    - **goal**
+    - types of statements in Goal oriented RE
+      - ![lec5_10](/pics/lec5_10.png)
+    - **goal** - a system objective 
+      - **prescriptive** statement ("shall, should, must") of intent that the system should satisfy via (cooperation of) agent(s) in manipulating entities
     - **agent**
+      - an active componenet playing a specific role in goal satisfaction
+      - agent = role, rather than individual
+        - must behave in a way to meet its assigned goals
+        - must be able to monitor / control phenomena involved in assigned goals
+      - agent types
+        - software 
+        - device 
+        - human
     - **entity**
+      - a passive component containing state
     - **requirement** 
+      - a goal under responsibility of single agent of software-to-be
     - **expectation**
-    - **domain property**
+      - a goal under responsibility of single agent of environment
+      - cannot be enforced by the application
+    - **domain property** 
+      - invariant descriptive property of environment
     - **domain hypothesis**
-  - **goal categories (be able to define and categorize goals)**
+      - descriptive statement about environment and subject to change
+  - **goal CATEGORIES (be able to define and categorize goals)**
+    - (where do goals come from?)
+      - system objectives during elicitation
+        - sometimes explicit, more often implicit
+        - mine them from background documents, scenarios, operational details
+          - search for intentional keywords: "in order to", "so that", "shall"
+        - system-as-is
+          - business goals: achieve more
+          - domain analysis: reduce complaints
     - **functional** 
+      - prescribe intended services to be provided by the system
+      - are used for building operational models of such services
+      - sub-types
+        - satisfaction - satisfying agent requests
+          - every avaliable book request should be satisfied
+        - information - keeping agents informed about state
+          - patrons should be notified 48 hourse before a due date 
+        - stimulus-response - providing responses to events
+          - train should accelerate upon command from station
     - **non-functional**
-  - **goal types (be able to define and categorize goals)**
-    - **behavioral**
+      - quality goals (not to be confused with soft goals)
+        - security - info about other patrons kept confidential
+        - safety - worst-case stopping distance mantained
+        - accuracy - book displayed as avaliable iff there is a copy on shelves
+        - performance - acceleration command sent every 3 seconds
+        - ...
+      - development goals
+        - cost, deadline, maintainability, etc.
+  - **goal TYPES (be able to define and categorize goals)**
+    - **behavioral** 
+      - prescribe behaviors
+      - can be satisfied in a clear-cut sense: YES or NO
+        - goal satisfaction 
+      - used for building operational models of the target system 
+        - achieve goals - target condition must eventually hold
+          - if a book is not returned on time, a reminder is sent
+          - a student shall be notified when clubs they are interested in schedule new events
+        - maintain / avoid goals - good condition must always hold or a bad condition must never hold
+          - if a book is in stock, it is always listed in the catelog
+          - a student's academic record is never visible to anyone except themselves and academic counselors
     - **soft**
+      - capture preferences among alternative behaviors 
+      - cannot be satisfied in clear-cut sense
+        -  goal satisficing
+     -  used for comparing alternatives, to select preferred option
+     -  often take the form:
+        -  maxmize / minimize, increase / reduce, improve, ...
+        -  stress conditions of air traffic controllers shall be reduced
+        -  the workload of library staff shall be reduced
+        -  duplicate club events shall be minimized 
+        -  time to graduation shall be reduced
+        -  the bibliographical search engine shall be usable by non-cs student
+  -  (why focus on Goals in RE?)
+     -  a rationale and framework for requirements
+     -  a natural mechanism for structuring complex specifications at different levels of concern
+     -  a basis for showing alignment of system-to-be with organization's strategic objectives
+        -  rich traceability
+     -  criteria for requirements completeness and relevance
+     -  support for evolution, negotiation, risk management
   - **goal diagrams**
     - **be able to create one given a problem description**
+    - ![lec5_38](/pics/lec5_38.png)
+  - (summary)
+    - goals provide a means to model initial user needs and can be readily derived during elicitation and from other documentation
+    - in analyzing goals we need to identify the conditions needed to provide 
+      - functionality or behavior (achieve/maintain goals)
+      - non-functional aspects (soft goals)
+      - who is responsible for the goal (environment / software agent)
+      - a goal model can be developed by 
+        - refining high level, coarse-grained goals to more lower level, fine-grained goals and agents
+        - abstracting low level goals to higher levels
+      - goal refinement / abstraction allows requirements engineers to explicitly document answers to "how" and "why" questions
+      - goal development concludes when no further refinement or abstraction is possible and every leaf goal is assigned to a single agent
 
 
 ### lecture 6 - usage modeling
