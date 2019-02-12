@@ -382,6 +382,7 @@
     - annotated: to provide guidance for developers, particularly w.r.t. relative necessity / priority / stability
 
     - (requirement measurability)
+
       | property    | measure                                                                                                            |
       | ----------- | ------------------------------------------------------------------------------------------------------------------ |
       | speed       | processed transactions / second or user / event response time or screen refresh time                               |
