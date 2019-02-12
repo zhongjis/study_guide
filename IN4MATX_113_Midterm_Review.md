@@ -410,7 +410,7 @@
 ### lecture 5 - goal orientation in RE
   - **vocabulary (be able to define and categorize statements)**
     - types of statements in Goal oriented RE
-      - ![lec5_10](/pics/lec5_10.png)
+      - ![lec5_10](./pics/lec5_10.png)
     - **goal** - a system objective 
       - **prescriptive** statement ("shall, should, must") of intent that the system should satisfy via (cooperation of) agent(s) in manipulating entities
     - **agent**
@@ -494,7 +494,7 @@
      -  support for evolution, negotiation, risk management
   - **goal diagrams**
     - **be able to create one given a problem description**
-    - ![lec5_38](/pics/lec5_38.png)
+    - ![lec5_38](./pics/lec5_38.png)
   - (summary)
     - goals provide a means to model initial user needs and can be readily derived during elicitation and from other documentation
     - in analyzing goals we need to identify the conditions needed to provide 
