@@ -1,4 +1,4 @@
 # study_guide
 more detail will be added soon
 
-All credit to original slides makers and lecturers.
+All content credit to original slides owners and lecturers.
